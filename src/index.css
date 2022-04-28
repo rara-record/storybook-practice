@@ -901,7 +901,13 @@ a:focus {
 .list-item.TASK_PINNED .icon-star {
   color: #2cc5d2;
 }
+.list-item.TODO_PINNED .icon-star {
+  color: #2cc5d2;
+}
 .list-item.TASK_ARCHIVED input[type="text"] {
+  color: #aaa;
+}
+.list-item.TODO_CEHCKED input[type="text"] {
   color: #aaa;
 }
 .list-item:hover {
