@@ -1,6 +1,8 @@
 import React from "react";
 
 const Todo = ({ todo: { id, title, state }, onClickedTodo, onPinTodo }) => {
+  console.log(`id: ${id}, title: ${title}, state: ${state}`);
+
   return (
     <div className={`list-item ${state}`}>
       <label className="checkbox">

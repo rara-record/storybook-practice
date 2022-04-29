@@ -4,7 +4,7 @@ import Todo from "./Todo";
 // default export를 생성한다
 export default {
   component: Todo,
-  title: "Todo",
+  title: "TODO/Todo",
 };
 
 const Template = (args) => <Todo {...args} />;
