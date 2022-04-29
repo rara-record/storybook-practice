@@ -1,9 +1,22 @@
 import Todo from "./Todo";
 
-export default function TaskList({ loading, todos, onClickedTodo, onPinTodo }) {
-  const events = {
-    onPinTodo,
-    onClickedTodo,
+import { updateTodoState } from "../lib/store/slice/todoSlice";
+import { useAppDispatch, useAppSelector } from "../lib/store/config";
+
+const TodoList = ({ loading, todos }) => {
+  const dispatch = useAppDispatch();
+
+  const PinTodo = (value) => {
+    dispatch(
+      updateTodoState({
+        id: value,
+        newTodoState: "TODO_PINNED",
+      })
+    );
+  };
+
+  const clickedTodo = () => {
+    dispatch(updateTodoState());
   };
 
   const LoadingRow = (
@@ -40,7 +53,7 @@ export default function TaskList({ loading, todos, onClickedTodo, onPinTodo }) {
     );
   }
 
-  // 핀으로 고정된 todo가 상단으로 오게끔 기존 todos를 복사 후, state에 따라 정렬
+  // 핀으로 고정된 todo가 상단으로 오게끔 기존 데이터를 복사 후, state에 따라 정렬
   const todosInOrder = [
     ...todos.filter((todo) => todo.state === "TODO_PINNED"),
     ...todos.filter((todo) => todo.state !== "TODO_PINNED"),
@@ -50,8 +63,15 @@ export default function TaskList({ loading, todos, onClickedTodo, onPinTodo }) {
   return (
     <div className="list-items">
       {todosInOrder.map((todo) => (
-        <Todo key={todo.id} todo={todo} {...events} />
+        <Todo
+          key={todo.id}
+          todo={todo}
+          onClickedTodo={clickedTodo}
+          onPinTodo={PinTodo}
+        />
       ))}
     </div>
   );
-}
+};
+
+export default TodoList;
