@@ -23,7 +23,6 @@ export const getTodoList = createAsyncThunk("todos/getTodo", async () => {
     title: todo.title,
     state: todo.completed ? "TODO_CHECKED" : "TODO_INBOX",
   }));
-  console.log(data);
   return data;
 });
 

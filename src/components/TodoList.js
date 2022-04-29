@@ -6,10 +6,14 @@ import { useDispatch, useSelector } from "react-redux";
 const TodoList = () => {
   // 리듀서 가지고 오기
   const todos = useSelector((state) => {
+    // 핀 된 todo가 위로 오게끔 복사해서 정렬
     const todosInOrder = [
       ...state.todobox.todos.filter((t) => t.state === "TODO_PINNED"),
       ...state.todobox.todos.filter((t) => t.state !== "TODO_PINNED"),
     ];
+
+    // state가 TODO_INBOX 거나 TODO_PINNED인 것만 담아서 리턴
+    // (check된 것 안보이게)
     const filteredTodos = todosInOrder.filter(
       (t) => t.state === "TODO_INBOX" || t.state === "TODO_PINNED"
     );
@@ -29,8 +33,13 @@ const TodoList = () => {
     );
   };
 
-  const clickedTodo = () => {
-    dispatch(updateTodoState());
+  const clickedTodo = (value) => {
+    dispatch(
+      updateTodoState({
+        id: value,
+        newTodoState: "TODO_CHECKED",
+      })
+    );
   };
 
   const LoadingRow = (
