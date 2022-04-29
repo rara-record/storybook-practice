@@ -5,7 +5,7 @@
   "scripts": {
     "build-css": "lessc src/style/index.less src/index.css",
     "watch-css": "npm run build-css && grunt",
-    "start": "react-scripts",
+    "start": "react-scripts start --openssl-legacy-provider start --openssl-legacy-provider",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
