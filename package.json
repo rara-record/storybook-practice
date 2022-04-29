@@ -5,13 +5,14 @@
   "scripts": {
     "build-css": "lessc src/style/index.less src/index.css",
     "watch-css": "npm run build-css && grunt",
-    "start": "react-scripts start --openssl-legacy-provider start --openssl-legacy-provider",
+    "start": "react-scripts",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "init-msw": "msw init public/"
+    "init-msw": "msw init public/",
+    "chromatic": "npx chromatic --project-token=5676092af4ea"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^6.4.19",
@@ -24,7 +25,7 @@
     "@storybook/react": "^6.4.19",
     "@storybook/testing-library": "^0.0.9",
     "@storybook/testing-react": "^1.2.3",
-    "chromatic": "^6.5.1",
+    "chromatic": "^6.5.4",
     "grunt": "^1.4.1",
     "grunt-contrib-less": "^3.0.0",
     "grunt-contrib-watch": "^1.1.0",

@@ -1,0 +1,40 @@
+info @storybook/react v6.4.22
+info 
+info => Cleaning outputDir: C:\\Users\\ruts2\\AppData\\Local\\Temp\\chromatic--6380-h8sCoaksJVrC
+info => Loading presets
+info => Copying static files: C:\Users\ruts2\OneDrive\바탕 화면\BORA\react\storybook\learnstorybook-code\public at C:\Users\ruts2\AppData\Local\Temp\chromatic--6380-h8sCoaksJVrC\
+info => Compiling manager..
+info => Compiling preview..
+info => Loading Webpack configuration from `node_modules\react-scripts`
+info => Removing existing JavaScript and TypeScript rules.
+info => Modifying Create React App rules.
+info => Using default Webpack4 setup
+<s> [webpack.Progress] 0% compiling
+<s> [webpack.Progress] 10% building 0/0 modules 0 active 
+<s> [webpack.Progress] 10% building 0/1 modules 1 active multi C:\Users\ruts2\OneDrive\바탕 화면\BORA\react\storybook\learnstorybook-code\node_modules\@storybook\core-client\dist\esm\globals\polyfills.js C:\Users\ruts2\OneDrive\바탕 화면\BORA\react\storybook\learnstorybook-code\node_modules\@storybook\core-client\dist\esm\globals\globals.js C:\Users\ruts2\OneDrive\바탕 화면\BORA\react\storybook\learnstorybook-code\storybook-init-framework-entry.js C:\Users\ruts2\OneDrive\바탕 화면\BORA\react\storybook\learnstorybook-code\node_modules\@storybook\addon-docs\dist\esm\frameworks\common\config.js-generated-config-entry.js C:\Users\ruts2\OneDrive\바탕 화면\BORA\react\storybook\learnstorybook-code\node_modules\@storybook\addon-docs\dist\esm\frameworks\react\config.js-generated-config-entry.js C:\Users\ruts2\OneDrive\바탕 화면\BORA\react\storybook\learnstorybook-code\node_modules\@storybook\react\dist\esm\client\preview\config-generated-config-entry.js C:\Users\ruts2\OneDrive\바탕 화면\BORA\react\storybook\learnstorybook-code\node_modules\@storybook\addon-links\dist\esm\preset\addDecorator.js-generated-config-entry.js C:\Users\ruts2\OneDrive\바탕 화면\BORA\react\storybook\learnstorybook-code\node_modules\@storybook\addon-actions\dist\esm\preset\addDecorator.js-generated-config-entry.js C:\Users\ruts2\OneDrive\바탕 화면\BORA\react\storybook\learnstorybook-code\node_modules\@storybook\addon-actions\dist\esm\preset\addArgs.js-generated-config-entry.js C:\Users\ruts2\OneDrive\바탕 화면\BORA\react\storybook\learnstorybook-code\node_modules\@storybook\addon-backgrounds\dist\esm\preset\addDecorator.js-generated-config-entry.js C:\Users\ruts2\OneDrive\바탕 화면\BORA\react\storybook\learnstorybook-code\node_modules\@storybook\addon-backgrounds\dist\esm\preset\addParameter.js-generated-config-entry.js C:\Users\ruts2\OneDrive\바탕 화면\BORA\react\storybook\learnstorybook-code\node_modules\@storybook\addon-measure\dist\esm\preset\addDecorator.js-generated-config-entry.js C:\Users\ruts2\OneDrive\바탕 화면\BORA\react\storybook\learnstorybook-code\node_modules\@storybook\addon-outline\dist\esm\preset\addDecorator.js-generated-config-entry.js C:\Users\ruts2\OneDrive\바탕 화면\BORA\react\storybook\learnstorybook-code\node_modules\@storybook\addon-interactions\dist\esm\preset\argsEnhancers.js-generated-config-entry.js C:\Users\ruts2\OneDrive\바탕 화면\BORA\react\storybook\learnstorybook-code\.storybook\preview.js-generated-config-entry.js C:\Users\ruts2\OneDrive\바탕 화면\BORA\react\storybook\learnstorybook-code\generated-stories-entry.js
+<s> [webpack.Progress] 10% building 1/1 modules 0 active 
+<s> [webpack.Progress] 10% building 1/2 modules 1 active C:\Users\ruts2\OneDrive\바탕 화면\BORA\react\storybook\learnstorybook-code\storybook-init-framework-entry.js
+node:internal/crypto/hash:67
+  this[kHandle] = new _Hash(algorithm, xofLen);
+                  ^
+
+Error: error:0308010C:digital envelope routines::unsupported
+    at new Hash (node:internal/crypto/hash:67:19)
+    at Object.createHash (node:crypto:135:10)
+    at module.exports (C:\Users\ruts2\OneDrive\바탕 화면\BORA\react\storybook\learnstorybook-code\node_modules\@storybook\builder-webpack4\node_modules\webpack\lib\util\createHash.js:135:53)
+    at NormalModule._initBuildHash (C:\Users\ruts2\OneDrive\바탕 화면\BORA\react\storybook\learnstorybook-code\node_modules\@storybook\builder-webpack4\node_modules\webpack\lib\NormalModule.js:417:16)
+    at handleParseError (C:\Users\ruts2\OneDrive\바탕 화면\BORA\react\storybook\learnstorybook-code\node_modules\@storybook\builder-webpack4\node_modules\webpack\lib\NormalModule.js:471:10)
+    at C:\Users\ruts2\OneDrive\바탕 화면\BORA\react\storybook\learnstorybook-code\node_modules\@storybook\builder-webpack4\node_modules\webpack\lib\NormalModule.js:503:5
+    at C:\Users\ruts2\OneDrive\바탕 화면\BORA\react\storybook\learnstorybook-code\node_modules\@storybook\builder-webpack4\node_modules\webpack\lib\NormalModule.js:358:12
+    at C:\Users\ruts2\OneDrive\바탕 화면\BORA\react\storybook\learnstorybook-code\node_modules\loader-runner\lib\LoaderRunner.js:373:3
+    at iterateNormalLoaders (C:\Users\ruts2\OneDrive\바탕 화면\BORA\react\storybook\learnstorybook-code\node_modules\loader-runner\lib\LoaderRunner.js:214:10)
+    at C:\Users\ruts2\OneDrive\바탕 화면\BORA\react\storybook\learnstorybook-code\node_modules\loader-runner\lib\LoaderRunner.js:205:4
+    at C:\Users\ruts2\OneDrive\바탕 화면\BORA\react\storybook\learnstorybook-code\node_modules\enhanced-resolve\lib\CachedInputFileSystem.js:85:15
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
+  library: 'digital envelope routines',
+  reason: 'unsupported',
+  code: 'ERR_OSSL_EVP_UNSUPPORTED'
+}
+
+Node.js v17.7.2
